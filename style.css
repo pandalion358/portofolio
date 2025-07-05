@@ -1,0 +1,84 @@
+/* style.css */
+:root{
+  --main:#14b8c1;
+  --accent:#f95f75;
+  --base:#fff;
+  --text:#333;
+  font-size:16px;
+}
+*{box-sizing:border-box;} body{margin:0;font-family:'Noto Sans JP',sans-serif;color:var(--text);}
+section{padding:clamp(60px,10vw,120px) 5vw;}
+h2{font-size:2rem;margin-bottom:1rem;text-align:center;}
+
+
+html{scroll-behavior:smooth;}
+.page-nav{
+  position:fixed;top:0;width:100%;background:#ffffffee;backdrop-filter:blur(6px);
+  display:flex;gap:1rem;justify-content:center;padding:.5rem 0;
+}
+
+
+#hero{
+  background:linear-gradient(135deg,var(--main),var(--accent));
+  color:#fff;
+  text-align:center;
+  padding:20vh 5vw;
+}
+.btn{
+  background:var(--base);
+  color:var(--main);
+  padding:1rem 2rem;
+  border-radius:8px;
+  display:inline-block;
+  margin-top:2rem;
+  transition:opacity .3s;
+}
+.btn:hover{opacity:.8;}
+/* About */
+.about-wrapper{
+  display:flex;align-items:center;gap:clamp(1.5rem,4vw,3rem);
+  max-width:900px;margin-inline:auto;
+}
+.about-avatar{
+  flex:0 0 160px;width:160px;height:160px;border-radius:50%;
+  object-fit:cover;box-shadow:0 4px 12px rgba(0,0,0,.1);
+}
+.about-text{flex:1;}
+.skill-list{list-style:none;padding:0;margin:1rem 0 0;}
+.skill-list li{margin:.25rem 0;}
+@media(max-width:768px){.about-wrapper{flex-direction:column;text-align:center;}}
+
+.card-list{
+  display:flex;flex-wrap:wrap;gap:1.5rem;justify-content:center;
+}
+.card{
+  flex:1 1 calc(33.333% - 1.5rem);
+  background:#fff;border-radius:12px;box-shadow:0 4px 12px rgba(0,0,0,.08);text-align:center;
+}
+.card img{width:100%;border-radius:12px 12px 0 0;}
+.card h3{margin:1rem 0;padding:0 1rem;}
+@media(max-width:768px){.card{flex:1 1 100%;}}
+
+
+/* Contact */
+.social-links{
+  display:flex;justify-content:center;gap:1.5rem;margin-bottom:2rem;
+}
+.social-links img{
+  width:32px;height:32px;filter:grayscale(100%);transition:filter .3s;
+}
+.social-links a:hover img{filter:grayscale(0%);}
+
+.contact-form{
+  max-width:640px;margin-inline:auto;display:grid;gap:1rem;
+}
+.contact-form label{display:flex;flex-direction:column;font-size:.9rem;gap:.25rem;}
+.contact-form input,
+.contact-form textarea{
+  padding:.75rem 1rem;border:1px solid #ccc;border-radius:6px;font:inherit;
+}
+.contact-form input:focus,
+.contact-form textarea:focus{
+  outline:none;border-color:var(--main);box-shadow:0 0 0 3px #14b8c133;
+}
+.contact-form .btn{width:max-content;align-self:center;}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My One-page Site</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header id="hero">
+  <h1>Web で未来をデザインしよう</h1>
+  <a href="#contact" class="btn">無料で相談する</a>
+</header>
+
+
+
+  <section id="about">
+  <h2>About</h2>
+  <div class="about-wrapper">
+    <img src="profile.jpg" alt="プロフィール写真" class="about-avatar">
+    <div class="about-text">
+      <p>
+        フロントエンドエンジニア & デザイナー。React / Vue / WordPress を中心に
+        “速く・美しく・アクセシブル” な Web づくりを探求しています。
+      </p>
+      <ul class="skill-list">
+        <li><strong>Languages:</strong> HTML / CSS / JavaScript / PHP</li>
+        <li><strong>Frameworks:</strong> React / Vue / Svelte</li>
+        <li><strong>Tools:</strong> Figma / Git / Vite / Netlify</li>
+      </ul>
+    </div>
+  </div>
+</section>
+ <section id="works">
+  <h2>Works</h2>
+  <div class="card-list">
+    <article class="card">
+      <img src="work1.jpg" alt="Work 1">
+      <h3>Project Alpha</h3>
+    </article>
+    ... 
+  </div>
+</section>
+<nav class="page-nav">
+  <a href="#about">About</a>
+  <a href="#works">Works</a>
+  <a href="#contact">Contact</a>
+</nav>
+  <section id="contact">
+  <h2>Contact</h2>
+
+  <!-- SNS リンク -->
+  <div class="social-links">
+    <a href="https://twitter.com/username" aria-label="Twitter">
+      <img src="icon-twitter.svg" alt="">
+    </a>
+    <a href="https://github.com/username" aria-label="GitHub">
+      <img src="icon-github.svg" alt="">
+    </a>
+    <a href="mailto:mail@example.com" aria-label="メール">
+      <img src="icon-mail.svg" alt="">
+    </a>
+  </div>
+
+  <!-- フォーム (Netlify) -->
+  <form name="contact" method="POST" data-netlify="true" class="contact-form">
+    <input type="hidden" name="form-name" value="contact">
+    <label>Name<input name="name" required></label>
+    <label>Email<input type="email" name="email" required></label>
+    <label>Message<textarea name="message" rows="4" required></textarea></label>
+    <button type="submit" class="btn">Send</button>
+  </form>
+</section>
+  <footer>...</footer>
+
+</body>
+</html>
