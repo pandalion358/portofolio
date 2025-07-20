@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTOFOLIO</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="header">
+        <h1>Welcom to My Page</h1>
+        <p>あなたのサービスやポートフォリオを紹介する1ページサイト</p>
+    </header>
+    <nav class="page-nav">
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">Service</a></li>
+            <li><a href="">Gallery</a></li>
+            <li><a href="">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="service">
+            <h2>Service</h2>
+            <div class="card-list">
+                <div class="card">
+                    <img src="images/work1.jpg" alt="サービス１">
+                    <div class="card-body">
+                        <h3>Web制作</h3>
+                        <p>魅力的なデザインと高品質なコーディングを提供します。</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/work1.jpg" alt="サービス１">
+                    <div class="card-body">
+                        <h3>Web制作</h3>
+                        <p>魅力的なデザインと高品質なコーディングを提供します。</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/work1.jpg" alt="サービス１">
+                    <div class="card-body">
+                        <h3>Web制作</h3>
+                        <p>魅力的なデザインと高品質なコーディングを提供します。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="gallery">
+            <h2>Gallery</h2>
+            <div class="gallery-list">
+                <div class="gallery">
+                    <a href="images/work1.jpg" target="_blank">
+                        <img src="images/work1.jpg" alt="Work1">
+                    </a>
+                </div>
+                <div class="gallery">
+                    <a href="images/work2.jpg" target="_blank">
+                        <img src="images/work2.jpg" alt="Work1">
+                    </a>
+                </div>
+                <div class="gallery">
+                    <a href="images/work3.jpg" target="_blank">
+                        <img src="images/work3.jpg" alt="Work1">
+                    </a>
+                </div>
+                <div class="gallery">
+                    <a href="images/work4.jpg" target="_blank">
+                        <img src="images/work4.jpg" alt="Work1">
+                    </a>
+                </div>
+
+            </div>
+        </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <form action="/thanks.html" name="contact" method="POST" class="contact-form">
+                <input type="hidden" name="form-name" value="contact">
+
+                <label for="name">お名前
+                    <input type="text" id="name" name="name" required>
+                </label>
+                <label for="email">メール
+                    <input type="email" id="email" name="email" required>
+                </label>
+                <div class="two-col">
+                    <label for="date">希望日
+                        <input type="date" id="date" name="date" required>
+                    </label>
+                    <label for="time">希望時間
+                        <input type="time" id="time" name="time" required>
+                    </label>
+                </div>
+                <label for="message">お問い合わせ内容
+                    <textarea name="message" id="message" rows="5" required></textarea>
+                </label>
+
+                <button type="submit" class="btn">送信</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        ©︎ 2025 My Profile. All rights reserved.
+    </footer>
+</body>
+</html>
